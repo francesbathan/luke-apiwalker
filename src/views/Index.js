@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { navigate } from "@reach/router";
+import styles from "./css/Index.module.css";
 
 function Index() {
   const [formState, setFormState] = useState({
@@ -35,6 +36,7 @@ function Index() {
           name="options"
           onChange={optionHandler}
           value={formState.options}
+          className={styles.searchBar}
         >
           <option value="people">People</option>
           <option value="species">Species</option>
@@ -45,9 +47,13 @@ function Index() {
       </label>
       <label>
         ID:
-        <input name="id" onChange={inputHandler} />
+        <input
+          name="id"
+          onChange={inputHandler}
+          className={styles.inputField}
+        />
       </label>
-      <button>Search</button>
+      <button className={styles.searchButton}>Search</button>
     </form>
   );
 }

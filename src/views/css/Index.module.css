@@ -1,0 +1,45 @@
+* {
+  margin: 0px 10px 30px 10px;
+}
+.searchBar {
+  width: 8vw;
+  height: 4vh;
+  padding: 5px;
+  border-radius: 10px;
+  font-family: montserrat;
+  outline: none;
+  cursor: pointer;
+}
+.inputField {
+  width: 3vw;
+  height: 2.5vh;
+  padding: 5px;
+  border-radius: 10px;
+  border: 1px solid #bcbcbc;
+  font-family: montserrat;
+  outline: none;
+}
+.searchButton {
+  width: 6vw;
+  height: 4vh;
+  padding: 5px;
+  border-radius: 10px;
+  font-family: montserrat;
+  outline: none;
+  cursor: pointer;
+  border: 1px solid black;
+  background-color: black;
+  color: yellow;
+}
+.searchButton:hover {
+  width: 6vw;
+  height: 4vh;
+  padding: 5px;
+  border-radius: 10px;
+  font-family: montserrat;
+  outline: none;
+  cursor: pointer;
+  border: 1px solid yellow;
+  background-color: yellow;
+  color: black;
+}
