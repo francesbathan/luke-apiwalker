@@ -14,6 +14,10 @@ function StarWarsFilms({ id }) {
       .catch(() => navigate("/error"));
   }, [id]);
 
+  if (films == null) {
+    return "Loading...";
+  }
+
   return (
     <div>
       <h1>{films.title}</h1>

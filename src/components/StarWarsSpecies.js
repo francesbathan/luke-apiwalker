@@ -15,6 +15,10 @@ function StarWarsSpecies({ id }) {
       .catch(() => navigate("/error"));
   }, [id]);
 
+  if (species == null) {
+    return "Loading...";
+  }
+
   return (
     <div>
       <h1>{species.name}</h1>

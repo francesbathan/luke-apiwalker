@@ -14,6 +14,10 @@ function StarWarsPlanets({ id }) {
       .catch(() => navigate("/error"));
   }, [id]);
 
+  if (planets == null) {
+    return "Loading...";
+  }
+
   return (
     <div>
       <h1>{planets.name}</h1>
